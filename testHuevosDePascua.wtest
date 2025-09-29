@@ -14,9 +14,9 @@ describe "test Huevos de Pascua" {
   test "test combinado" {
     caceria.encontrarPrimerHuevo(ana)
     assert.equals(3, caceria.cantidadPorEncontrar())
-    assert.equals(2, caceria.huevosFaltantesBlancos())
+    assert.equals(2, caceria.cuantosConChocoBlanco())
     assert.that(caceria.aunNoFueEncontrado(huevoRepostero))
-    assert.equals([huevoMixto, huevoRepostero], caceria.huevosFaltantesBlancos())
+    assert.equals([huevoMixto,huevoRepostero],caceria.huevosFaltantesBlancos())
     caceria.encontrarUnHuevoPor(tito, huevoMixto)
     caceria.encontrarLosRestantes(jose)
     assert.that([ana, jose].all({c => c.estaEnfermo()}))

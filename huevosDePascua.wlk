@@ -10,7 +10,7 @@ object huevoMixto {
     method calorias() = 900
     
     method esDeChocolateConLeche() = true
-    method esDeChocolateBlanco() = false
+    method esDeChocolateBlanco() = true
     method esDeChocolateAmargo() = false
 }
 
